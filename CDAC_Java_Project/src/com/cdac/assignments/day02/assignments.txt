@@ -1,0 +1,129 @@
+1. Electricity Bill Calculation — if-else-if
+Problem Statement:
+Write a Java program to calculate an electricity bill based on the number of units consumed.
+Units
+Rate
+0–100
+₹2 per unit
+101–200
+₹3 per unit
+201–300
+₹5 per unit
+Above 300
+₹7 per unit
+Read the number of units in main(). Pass it to a static method calculateBill(). The method should calculate and return the bill amount to main().
+Concepts: int, double, arithmetic operator, if-else-if, static method, return value.
+
+2. Student Grade Calculation — if-else-if
+Problem Statement:
+Write a Java program to calculate a student's grade based on marks.
+Marks
+Grade
+90–100
+A
+75–89
+B
+60–74
+C
+50–59
+D
+Below 50
+F
+Read the marks in main(). Pass the marks to a static method calculateGrade(). The method should return the grade to main().
+Concepts: int, relational operators, if-else-if, char/String, static method.
+
+3. Product Discount — if-else-if
+Problem Statement:
+Write a Java program to calculate the final price of a product after applying a discount.
+Purchase Amount
+Discount
+₹10,000 and above
+20%
+₹5,000–₹9,999
+10%
+₹2,000–₹4,999
+5%
+Below ₹2,000
+No discount
+Read productId, productName, and price in main(). Pass the price to a static method calculateFinalPrice(). The method should calculate and return the final price.
+Display the product details and final price in main().
+Concepts: int, String, double, arithmetic operators, if-else-if.
+
+4. Largest of Two Numbers — if-else
+Problem Statement:
+Write a Java program to find the largest of two numbers.
+Read two integers in main(). Pass both numbers to a static method findLargest(). The method should compare the numbers and return the larger number to main().
+If both numbers are equal, return either number.
+Concepts: int, relational operator, if-else, static method, parameters, return.
+
+5. Check Voting Eligibility — if
+Problem Statement:
+Write a Java program to check whether a person is eligible to vote.
+Read the person's age in main(). Pass the age to a static method isEligible(). The method should return true if the age is 18 or above, otherwise return false.
+Display an appropriate message in main() based on the returned result.
+Concepts: int, relational operator, boolean, if, static method.
+
+6. Employee Salary Calculation — if-else
+Problem Statement:
+Write a Java program to calculate an employee's final salary.
+Read the employee's basic salary in main().
+If basic salary is ₹50,000 or above, add 20% HRA. 
+Otherwise, add 10% HRA. 
+Pass the basic salary to a static method calculateSalary(). The method should calculate and return the final salary.
+Concepts: double, arithmetic operators, if-else, percentage calculation, static method.
+
+7. Temperature Conversion — Operators + if
+Problem Statement:
+Write a Java program to convert temperature from Celsius to Fahrenheit.
+Formula:
+Fahrenheit = (Celsius × 9 / 5) + 32
+Read the Celsius temperature in main(). Pass it to a static method convertTemperature(). The method should return the Fahrenheit temperature.
+In main(), also check whether the converted temperature is above 100°F and display an appropriate message.
+Concepts: double, arithmetic operators, if, static method, return value.
+
+8. Simple Calculator — if-else-if
+Problem Statement:
+Write a Java program to perform a basic arithmetic operation.
+Read two numbers and an operator (+, -, *, /) in main().
+Pass all three values to a static method calculate().
+The method should perform the requested operation and return the result.
+For division, handle division by zero using a conditional statement.
+Concepts: double, char, arithmetic operators, if-else-if, parameters, return value.
+
+
+9. Bus Ticket Fare — if-else-if
+Problem Statement:
+Write a Java program to calculate a bus ticket fare based on passenger age.
+Age
+Fare
+Below 5
+Free
+5–12
+₹20
+13–59
+₹40
+60 and above
+₹25
+Read the passenger's name and age in main(). Pass the age to a static method calculateFare().
+The method should return the ticket fare to main().
+Display the passenger name, age, and fare.
+Concepts: String, int, if-else-if, relational operators, static method.
+
+10. Mobile Data Usage — if-else-if
+Problem Statement:
+Write a Java program to calculate the mobile data charge based on data usage.
+Data Used
+Charge
+Up to 1 GB
+₹50
+More than 1 GB up to 5 GB
+₹100
+More than 5 GB up to 10 GB
+₹200
+Above 10 GB
+₹350
+Read the customer's mobile number and data usage in GB in main().
+Pass the data usage to a static method calculateCharge().
+The method should calculate and return the charge to main().
+Display the mobile number, data usage, and final charge.
+Concepts: long, double, arithmetic, if-else-if, static method, parameters, return.
