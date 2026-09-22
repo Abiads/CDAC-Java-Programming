@@ -32,6 +32,8 @@ This repository is organized according to the official syllabus (`05_Java Progra
 │   │   └── Assignment_01_Problems.md # 10 Problems (Arithmetic, Interest, Voting, etc.)
 │   ├── Day02_Control_Flow/
 │   │   └── Assignment_02_Problems.md # 10 Problems (Bills, Grades, Discounts, Tickets, etc.)
+│   ├── Day03_Loops_and_Arrays/
+│   │   └── Assignment_03_Problems.md # 10 Problems (Primes, Fib, Min/Max, Sort, Matrix)
 │   ├── Lab_Employee_Management/
 │   │   └── Problem_Statement.md      # Sessions 7 & 8 Official Lab Assignment
 │   └── Practice_Bank/
@@ -47,7 +49,15 @@ This repository is organized according to the official syllabus (`05_Java Progra
             ├── assignments/
             │   ├── day01/           # Q01 through Q10 runnable implementations
             │   ├── day02/           # Q01 through Q10 runnable implementations
+            │   ├── day03/           # Q01 through Q10 (Loops & Arrays)
             │   └── employee_lab/    # Employee & EmployeeManagementDemo
+            ├── practice/            # Syllabus Practice Bank Implementations
+            │   ├── module01_oop/    # Bank Account Hierarchy & Palindromes
+            │   ├── module02_exceptions/ # Custom Checked/Unchecked Exceptions
+            │   ├── module03_collections/ # Generic Pair & Word Frequency Map
+            │   ├── module04_streams/    # Student Grade Streams & Fibonacci
+            │   ├── module05_concurrency/ # Producer-Consumer & Thread Sync
+            │   └── module06_reflection/ # Class Inspector Demo
             ├── session01_basics/    # JVM, Data Types, Control Statements
             ├── session03_oop/       # OOP, Encapsulation, Polymorphism, Strings
             ├── session05_exceptions/ # Custom & built-in exception handling
