@@ -30,6 +30,8 @@ This repository is organized according to the official syllabus (`05_Java Progra
 ├── Assignments/                     # Assignments & Problem Banks
 │   ├── Day01_Basic_Programs/
 │   │   └── Assignment_01_Problems.md # 10 Problems (Arithmetic, Interest, Voting, etc.)
+│   ├── Day02_Control_Flow/
+│   │   └── Assignment_02_Problems.md # 10 Problems (Bills, Grades, Discounts, Tickets, etc.)
 │   ├── Lab_Employee_Management/
 │   │   └── Problem_Statement.md      # Sessions 7 & 8 Official Lab Assignment
 │   └── Practice_Bank/
@@ -44,6 +46,7 @@ This repository is organized according to the official syllabus (`05_Java Progra
         └── com/cdac/
             ├── assignments/
             │   ├── day01/           # Q01 through Q10 runnable implementations
+            │   ├── day02/           # Q01 through Q10 runnable implementations
             │   └── employee_lab/    # Employee & EmployeeManagementDemo
             ├── session01_basics/    # JVM, Data Types, Control Statements
             ├── session03_oop/       # OOP, Encapsulation, Polymorphism, Strings

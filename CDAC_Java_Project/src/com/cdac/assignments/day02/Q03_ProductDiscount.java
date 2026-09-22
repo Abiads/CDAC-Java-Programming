@@ -9,9 +9,9 @@ public class Q03_ProductDiscount {
 
         if (price >= 10000) {
             discount = 0.20;
-        } else if (price >= 5000 && price <= 9999) {
+        } else if (price >= 5000) {
             discount = 0.10;
-        } else if (price >= 2000 && price <= 4999) {
+        } else if (price >= 2000) {
             discount = 0.05;
         } else {
             discount = 0.0;
