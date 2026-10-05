@@ -34,6 +34,8 @@ This repository is organized according to the official syllabus (`05_Java Progra
 │   │   └── Assignment_02_Problems.md # 10 Problems (Bills, Grades, Discounts, Tickets, etc.)
 │   ├── Day03_Loops_and_Arrays/
 │   │   └── Assignment_03_Problems.md # 10 Problems (Primes, Fib, Min/Max, Sort, Matrix)
+│   ├── Day04_Classes_and_Objects/
+│   │   └── Assignment_04_Problems.md # 5 Problems (Employee, BankAccount, Product, Electricity, MovieTicket)
 │   ├── Lab_Employee_Management/
 │   │   └── Problem_Statement.md      # Sessions 7 & 8 Official Lab Assignment
 │   └── Practice_Bank/
@@ -50,6 +52,7 @@ This repository is organized according to the official syllabus (`05_Java Progra
             │   ├── day01/           # Q01 through Q10 runnable implementations
             │   ├── day02/           # Q01 through Q10 runnable implementations
             │   ├── day03/           # Q01 through Q10 (Loops & Arrays)
+            │   ├── day04/           # Q01 through Q05 (Classes & Objects)
             │   └── employee_lab/    # Employee & EmployeeManagementDemo
             ├── practice/            # Syllabus Practice Bank Implementations
             │   ├── module01_oop/    # Bank Account Hierarchy & Palindromes

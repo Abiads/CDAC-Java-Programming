@@ -39,14 +39,32 @@ This directory is a ready-to-use, pre-configured Eclipse Java Project. It contai
 
 ```
 src/
-├── com.cdac.assignments.day01       # 10 runnable programs from Assignment 1
+├── com.cdac.assignments.day01       # 10 runnable programs from Assignment 1 (Basics & Operators)
+├── com.cdac.assignments.day02       # 10 runnable programs from Assignment 2 (Control Flow & Slabs)
+├── com.cdac.assignments.day03       # 10 runnable programs from Assignment 3 (Loops, Sorting & Matrices)
+├── com.cdac.assignments.day04       # 5 solved assignments from Assignment 4 (Classes & Objects)
 ├── com.cdac.assignments.employee_lab # Official Sessions 7 & 8 Employee Lab assignment
+├── com.cdac.practice.module01_oop    # Bank Account Hierarchy & String Palindrome
+├── com.cdac.practice.module02_exceptions # Custom Banking Checked/Unchecked Exceptions
+├── com.cdac.practice.module03_collections # Generic Pair & Word Frequency Map
+├── com.cdac.practice.module04_streams # Student Grade Analyzer & Fibonacci Streams
+├── com.cdac.practice.module05_concurrency # Producer-Consumer & Thread Synchronization
+├── com.cdac.practice.module06_reflection # Runtime Class Inspector & Introspection
 ├── com.cdac.session01_basics        # JVM, Data Types, Control Statements
 ├── com.cdac.session03_oop           # Encapsulation, Polymorphism, Strings
 ├── com.cdac.session05_exceptions    # Exception handling & Custom Exceptions
-├── com.cdac.session06_collections   # Collections, Generics, Enums
-├── com.cdac.session07_lambdas       # Functional Interfaces & Lambdas
-├── com.cdac.session09_streams       # Stream API & java.time Date-Time API
-├── com.cdac.session11_concurrency   # Threads, Synchronization & Locks
-└── com.cdac.session13_reflection    # Reflection API runtime inspection
+└── com.cdac.session06_collections   # Collections, Generics, Enums
 ```
+
+---
+
+## 📋 Assignments Overview
+
+| Assignment Module | Package | Problems & Description |
+| :--- | :--- | :--- |
+| **Day 01: Basics & Operators** | `com.cdac.assignments.day01` | Arithmetic, Circle Area, Simple Interest, Fahrenheit, Total/Avg, Even/Odd, Sign Check, Max of 2, Voting, Student Result |
+| **Day 02: Control Flow** | `com.cdac.assignments.day02` | Electricity Bill, Student Grade, Product Discount, Largest of 2, Voting Eligibility, Salary Calculation, Temp Check, Calculator, Bus Fare, Mobile Data |
+| **Day 03: Loops & Arrays** | `com.cdac.assignments.day03` | Sum of Natural Numbers, Factorial, Prime Check, Fibonacci, Reverse/Palindrome, Array Sum/Avg, Min/Max, Linear Search, Bubble Sort, Matrix Addition |
+| **Day 04: Classes & Objects** | `com.cdac.assignments.day04` | Employee Salary (`Employee`), Bank Account (`BankAccount`), Product Invoice (`Product`), Electricity Bill (`ElectricityBill`), Movie Ticket (`MovieTicket`) |
+| **Employee Lab** | `com.cdac.assignments.employee_lab` | Sessions 7 & 8 Employee management lab using Java Collections |
+

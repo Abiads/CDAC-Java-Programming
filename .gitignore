@@ -27,6 +27,5 @@ Desktop.ini
 *.bak
 *.swp
 *~.nib
-local.properties
-.loadpath
-.recommenders
+# Office lock files
+~$*
