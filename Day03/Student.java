@@ -1,7 +1,5 @@
 package com.cdac;
 
-import java.util.Scanner;
-
 public class Student
 {
 int sid;

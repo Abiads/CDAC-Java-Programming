@@ -9,6 +9,7 @@ public class ExceptionHandlingDemo {
 
     // Custom Checked Exception
     public static class InsufficientBalanceException extends Exception {
+        private static final long serialVersionUID = 1L;
         private final double shortfall;
 
         public InsufficientBalanceException(String message, double shortfall) {
@@ -23,6 +24,8 @@ public class ExceptionHandlingDemo {
 
     // Custom Unchecked / Runtime Exception
     public static class InvalidAmountException extends RuntimeException {
+        private static final long serialVersionUID = 1L;
+
         public InvalidAmountException(String message) {
             super(message);
         }
@@ -57,10 +60,6 @@ public class ExceptionHandlingDemo {
         // 2. Handling Multiple Catch Blocks & Unchecked Exception
         System.out.println("\nAttempting invalid operations...");
         try {
-            int[] arr = {10, 20, 30};
-            int divisor = 0;
-            // Uncheck to test either:
-            // int errorDiv = arr[0] / divisor; // ArithmeticException
             processWithdrawal(accountBalance, -500.0); // InvalidAmountException
         } catch (InvalidAmountException | ArithmeticException ex) {
             System.err.println("[MULTI-CATCH CAUGHT] " + ex.getClass().getSimpleName() + ": " + ex.getMessage());

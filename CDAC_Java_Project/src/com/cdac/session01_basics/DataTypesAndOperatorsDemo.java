@@ -25,6 +25,7 @@ public class DataTypesAndOperatorsDemo {
 
         System.out.println("byte: " + b + ", short: " + s + ", int: " + i + ", long: " + l);
         System.out.println("float: " + f + ", double: " + d + ", char: " + c + ", boolean: " + flag);
+        System.out.println("Session counter: " + sessionCounter);
 
         System.out.println("\n--- 2. Wrapper Classes & Autoboxing ---");
         // Autoboxing (primitive -> object)
@@ -35,6 +36,7 @@ public class DataTypesAndOperatorsDemo {
         // Unboxing (object -> primitive)
         int unboxedInt = boxedInt;
         System.out.println("Boxed Integer: " + boxedInt + " -> Unboxed primitive: " + unboxedInt);
+        System.out.println("Boxed Double: " + boxedDouble + ", Boxed Boolean: " + boxedBool);
         System.out.println("Integer.parseInt(\"1024\") = " + Integer.parseInt("1024"));
         System.out.println("Binary string of 42 = " + Integer.toBinaryString(42));
 
