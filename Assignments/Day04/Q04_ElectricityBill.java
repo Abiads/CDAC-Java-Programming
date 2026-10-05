@@ -1,14 +1,12 @@
-package com.cdac.assignments.day04;
-
 import java.util.Scanner;
 
-public class ElectricityBill {
+class ElectricityBill {
     int consumerNumber;
     String consumerName;
     int units;
     double billAmount;
 
-    public void read() {
+    void read() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Consumer Number: ");
         consumerNumber = sc.nextInt();
@@ -18,7 +16,7 @@ public class ElectricityBill {
         units = sc.nextInt();
     }
 
-    public void calculateBill() {
+    void calculateBill() {
         if (units <= 100) {
             billAmount = units * 2;
         } else if (units <= 200) {
@@ -28,11 +26,20 @@ public class ElectricityBill {
         }
     }
 
-    public void display() {
+    void display() {
         System.out.println("\n--- Electricity Bill ---");
         System.out.println("Consumer Number : " + consumerNumber);
         System.out.println("Consumer Name   : " + consumerName);
         System.out.println("Units Consumed  : " + units);
         System.out.println("Bill Amount     : ₹" + billAmount);
+    }
+}
+
+public class Q04_ElectricityBill {
+    public static void main(String[] args) {
+        ElectricityBill eb = new ElectricityBill();
+        eb.read();
+        eb.calculateBill();
+        eb.display();
     }
 }

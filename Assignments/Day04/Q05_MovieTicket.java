@@ -1,15 +1,13 @@
-package com.cdac.assignments.day04;
-
 import java.util.Scanner;
 
-public class MovieTicket {
+class MovieTicket {
     String customerName;
     String movieName;
     int numberOfTickets;
     double ticketPrice;
     double totalAmount;
 
-    public void read() {
+    void read() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Customer Name: ");
         customerName = sc.next();
@@ -21,16 +19,25 @@ public class MovieTicket {
         ticketPrice = sc.nextDouble();
     }
 
-    public void calculateAmount() {
+    void calculateAmount() {
         totalAmount = numberOfTickets * ticketPrice;
     }
 
-    public void display() {
+    void display() {
         System.out.println("\n--- Movie Ticket Booking Details ---");
         System.out.println("Customer Name     : " + customerName);
         System.out.println("Movie Name        : " + movieName);
         System.out.println("Number of Tickets : " + numberOfTickets);
         System.out.println("Ticket Price      : ₹" + ticketPrice);
         System.out.println("Total Amount      : ₹" + totalAmount);
+    }
+}
+
+public class Q05_MovieTicket {
+    public static void main(String[] args) {
+        MovieTicket mt = new MovieTicket();
+        mt.read();
+        mt.calculateAmount();
+        mt.display();
     }
 }

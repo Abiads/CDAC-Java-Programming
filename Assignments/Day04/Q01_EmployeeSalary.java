@@ -1,8 +1,6 @@
-package com.cdac.assignments.day04;
-
 import java.util.Scanner;
 
-public class Employee {
+class Employee {
     int empId;
     String empName;
     double basicSalary;
@@ -10,7 +8,7 @@ public class Employee {
     double da;
     double grossSalary;
 
-    public void read() {
+    void read() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Employee ID: ");
         empId = sc.nextInt();
@@ -24,11 +22,11 @@ public class Employee {
         da = sc.nextDouble();
     }
 
-    public void calculateSalary() {
+    void calculateSalary() {
         grossSalary = basicSalary + hra + da;
     }
 
-    public void display() {
+    void display() {
         System.out.println("\n--- Employee Details ---");
         System.out.println("Employee ID   : " + empId);
         System.out.println("Employee Name : " + empName);
@@ -36,5 +34,14 @@ public class Employee {
         System.out.println("HRA           : " + hra);
         System.out.println("DA            : " + da);
         System.out.println("Gross Salary  : " + grossSalary);
+    }
+}
+
+public class Q01_EmployeeSalary {
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.read();
+        emp.calculateSalary();
+        emp.display();
     }
 }

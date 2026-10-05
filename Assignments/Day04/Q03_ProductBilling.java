@@ -1,36 +1,43 @@
-package com.cdac.assignments.day04;
-
 import java.util.Scanner;
 
-public class Product {
+class Product {
     int productId;
     String productName;
     double price;
     int quantity;
     double totalAmount;
 
-    public void read() {
+    void read() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Product ID: ");
         productId = sc.nextInt();
         System.out.print("Enter Product Name: ");
         productName = sc.next();
-        System.out.print("Enter Price: ");
+        System.out.print("Enter Unit Price: ");
         price = sc.nextDouble();
         System.out.print("Enter Quantity: ");
         quantity = sc.nextInt();
     }
 
-    public void calculateBill() {
+    void calculateBill() {
         totalAmount = price * quantity;
     }
 
-    public void display() {
+    void display() {
         System.out.println("\n--- Product Invoice ---");
         System.out.println("Product ID   : " + productId);
         System.out.println("Product Name : " + productName);
-        System.out.println("Price        : ₹" + price);
+        System.out.println("Unit Price   : ₹" + price);
         System.out.println("Quantity     : " + quantity);
         System.out.println("Total Amount : ₹" + totalAmount);
+    }
+}
+
+public class Q03_ProductBilling {
+    public static void main(String[] args) {
+        Product p = new Product();
+        p.read();
+        p.calculateBill();
+        p.display();
     }
 }

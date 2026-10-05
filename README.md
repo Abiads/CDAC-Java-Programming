@@ -13,34 +13,26 @@ This repository is organized according to the official syllabus (`05_Java Progra
 ├── Day01/                           # Original Day 1 documents (.docx)
 │   ├── Java Assignment 1.docx
 │   └── Java Notes DAY1.docx
+├── Day02/                           # Day 2 documents, notes & classroom code
+│   ├── Java Assignment 2.docx
+│   ├── Java Notes DAY2.docx
+│   ├── Java Notes Day2.pdf
+│   └── Day2Examples.zip
+├── Day03/                           # Day 3 notes and student classroom code
+│   ├── Day3-Notes-Array.docx
+│   ├── Student.java
+│   └── TestStudent.java
+├── Day04/                           # Day 4 assignment document
+│   └── Java Assignment 4-classes and objects.docx
+│
+├── Assignments/                     # Solved Student Assignments (Pure Java Files)
+│   ├── Day01/                       # 10 simple Java programs (Operators, Basics)
+│   ├── Day02/                       # 10 simple Java programs (Control Flow, Slabs)
+│   ├── Day03/                       # 10 simple Java programs (Loops & Arrays)
+│   └── Day04/                       # 5 simple Java programs (Classes & Objects)
 │
 ├── Notes/                           # Detailed Session-by-Session Theory Notes
-│   ├── 00_Course_Syllabus_Roadmap.md
-│   ├── Session_01_02_Java_Basics_ControlFlow.md
-│   ├── Session_03_04_OOP_Inheritance_Polymorphism.md
-│   ├── Session_05_Exception_Handling.md
-│   ├── Session_06_Generics_Collections_Enums.md
-│   ├── Session_07_08_Functional_Programming_Lambdas.md
-│   ├── Session_09_10_StreamAPI_DateTime.md
-│   ├── Session_11_12_Concurrency_Multithreading.md
-│   ├── Session_13_Reflection_API.md
-│   ├── Session_14_NodeJS_Overview_Comparison.md
-│   └── Session_15_Spring_Framework_Overview.md
-│
-├── Assignments/                     # Assignments & Problem Banks
-│   ├── Day01_Basic_Programs/
-│   │   └── Assignment_01_Problems.md # 10 Problems (Arithmetic, Interest, Voting, etc.)
-│   ├── Day02_Control_Flow/
-│   │   └── Assignment_02_Problems.md # 10 Problems (Bills, Grades, Discounts, Tickets, etc.)
-│   ├── Day03_Loops_and_Arrays/
-│   │   └── Assignment_03_Problems.md # 10 Problems (Primes, Fib, Min/Max, Sort, Matrix)
-│   ├── Day04_Classes_and_Objects/
-│   │   └── Assignment_04_Problems.md # 5 Problems (Employee, BankAccount, Product, Electricity, MovieTicket)
-│   ├── Lab_Employee_Management/
-│   │   └── Problem_Statement.md      # Sessions 7 & 8 Official Lab Assignment
-│   └── Practice_Bank/
-│       └── Syllabus_Practice_Questions.md
-│
+
 └── CDAC_Java_Project/               # Pre-Configured Eclipse Java Project
     ├── .project                     # Eclipse project definition
     ├── .classpath                   # Eclipse source & JRE library paths
