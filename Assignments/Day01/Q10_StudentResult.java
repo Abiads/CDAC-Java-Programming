@@ -12,5 +12,6 @@ public class Q10_StudentResult {
         } else {
             System.out.println("Fail");
         }
+        sc.close();
     }
 }

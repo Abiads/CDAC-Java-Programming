@@ -19,6 +19,7 @@ public class MovieTicket {
         numberOfTickets = sc.nextInt();
         System.out.print("Enter Ticket Price: ");
         ticketPrice = sc.nextDouble();
+        sc.close();
     }
 
     public void calculateAmount() {

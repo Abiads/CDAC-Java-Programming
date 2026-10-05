@@ -20,6 +20,7 @@ class Employee {
         hra = sc.nextDouble();
         System.out.print("Enter DA: ");
         da = sc.nextDouble();
+        sc.close();
     }
 
     void calculateSalary() {

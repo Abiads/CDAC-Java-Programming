@@ -12,5 +12,6 @@ public class Q02_AreaOfCircle {
 
         System.out.println("Area of Circle: " + area);
         System.out.println("Circumference of Circle: " + circumference);
+        sc.close();
     }
 }

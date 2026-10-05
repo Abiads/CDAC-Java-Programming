@@ -25,5 +25,6 @@ public class Q03_PrimeNumberCheck {
         } else {
             System.out.println(n + " is NOT a Prime Number.");
         }
+        sc.close();
     }
 }

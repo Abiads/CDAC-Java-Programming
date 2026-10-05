@@ -12,5 +12,6 @@ public class Q06_EvenOrOdd {
         } else {
             System.out.println(n + " is Odd");
         }
+        sc.close();
     }
 }

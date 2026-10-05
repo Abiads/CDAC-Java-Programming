@@ -28,5 +28,6 @@ public class Q10_MobileDataUsage {
         System.out.println("Mobile Number: " + mobileNumber);
         System.out.println("Data Consumed: " + dataGB + " GB");
         System.out.println("Total Charge: ₹" + charge);
+        sc.close();
     }
 }

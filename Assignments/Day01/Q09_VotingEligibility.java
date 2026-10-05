@@ -12,5 +12,6 @@ public class Q09_VotingEligibility {
         } else {
             System.out.println("Not eligible to vote");
         }
+        sc.close();
     }
 }

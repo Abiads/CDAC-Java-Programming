@@ -42,5 +42,6 @@ public class Q10_MatrixAddition {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

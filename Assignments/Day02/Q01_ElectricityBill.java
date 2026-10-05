@@ -28,5 +28,6 @@ public class Q01_ElectricityBill {
 
         System.out.println("Units Consumed: " + units);
         System.out.println("Electricity Bill Amount: ₹" + bill);
+        sc.close();
     }
 }

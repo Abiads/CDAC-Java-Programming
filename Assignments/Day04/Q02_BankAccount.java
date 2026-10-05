@@ -13,6 +13,7 @@ class BankAccount {
         customerName = sc.next();
         System.out.print("Enter Initial Balance: ");
         balance = sc.nextDouble();
+        sc.close();
     }
 
     void deposit(double amount) {

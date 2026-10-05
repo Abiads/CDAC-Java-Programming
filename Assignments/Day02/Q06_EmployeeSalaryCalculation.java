@@ -24,5 +24,6 @@ public class Q06_EmployeeSalaryCalculation {
 
         System.out.println("Basic Salary: ₹" + basicSalary);
         System.out.println("Final Salary with HRA: ₹" + finalSalary);
+        sc.close();
     }
 }

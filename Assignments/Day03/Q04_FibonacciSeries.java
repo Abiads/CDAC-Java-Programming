@@ -18,5 +18,6 @@ public class Q04_FibonacciSeries {
             b = c;
         }
         System.out.println();
+        sc.close();
     }
 }

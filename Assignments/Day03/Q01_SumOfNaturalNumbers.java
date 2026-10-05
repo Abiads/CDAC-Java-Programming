@@ -13,5 +13,6 @@ public class Q01_SumOfNaturalNumbers {
         }
 
         System.out.println("Sum of first " + n + " natural numbers = " + sum);
+        sc.close();
     }
 }

@@ -16,6 +16,7 @@ public class ElectricityBill {
         consumerName = sc.next();
         System.out.print("Enter Number of Units: ");
         units = sc.nextInt();
+        sc.close();
     }
 
     public void calculateBill() {

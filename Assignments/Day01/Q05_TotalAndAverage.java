@@ -18,5 +18,6 @@ public class Q05_TotalAndAverage {
 
         System.out.println("Total Marks: " + total);
         System.out.println("Average Marks: " + average);
+        sc.close();
     }
 }

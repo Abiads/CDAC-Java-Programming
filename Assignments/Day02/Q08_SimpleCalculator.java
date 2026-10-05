@@ -35,5 +35,6 @@ public class Q08_SimpleCalculator {
 
         double result = calculate(num1, num2, op);
         System.out.println("Result: " + result);
+        sc.close();
     }
 }

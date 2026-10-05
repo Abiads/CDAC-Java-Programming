@@ -14,5 +14,6 @@ public class Q07_PositiveNegativeZero {
         } else {
             System.out.println("The number is Zero");
         }
+        sc.close();
     }
 }

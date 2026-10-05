@@ -22,5 +22,6 @@ public class Q04_LargestOfTwoNumbers {
         int largest = findLargest(num1, num2);
 
         System.out.println("Largest number is: " + largest);
+        sc.close();
     }
 }

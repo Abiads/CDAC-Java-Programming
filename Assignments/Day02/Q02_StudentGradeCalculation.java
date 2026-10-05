@@ -26,5 +26,6 @@ public class Q02_StudentGradeCalculation {
 
         System.out.println("Marks: " + marks);
         System.out.println("Grade: " + grade);
+        sc.close();
     }
 }

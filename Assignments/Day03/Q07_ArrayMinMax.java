@@ -27,5 +27,6 @@ public class Q07_ArrayMinMax {
 
         System.out.println("Minimum element: " + min);
         System.out.println("Maximum element: " + max);
+        sc.close();
     }
 }

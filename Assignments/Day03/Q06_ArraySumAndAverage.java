@@ -22,5 +22,6 @@ public class Q06_ArraySumAndAverage {
 
         System.out.println("Sum = " + sum);
         System.out.println("Average = " + average);
+        sc.close();
     }
 }

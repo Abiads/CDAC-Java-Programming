@@ -16,5 +16,6 @@ public class Q02_FactorialCalculation {
             }
             System.out.println("Factorial of " + n + " = " + fact);
         }
+        sc.close();
     }
 }

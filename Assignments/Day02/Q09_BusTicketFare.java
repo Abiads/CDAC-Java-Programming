@@ -32,5 +32,6 @@ public class Q09_BusTicketFare {
         } else {
             System.out.println("Bus Fare: ₹" + fare);
         }
+        sc.close();
     }
 }

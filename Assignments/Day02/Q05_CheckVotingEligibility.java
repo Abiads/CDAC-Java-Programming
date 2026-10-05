@@ -23,5 +23,6 @@ public class Q05_CheckVotingEligibility {
         } else {
             System.out.println("The person is NOT eligible to vote.");
         }
+        sc.close();
     }
 }

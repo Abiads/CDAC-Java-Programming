@@ -18,5 +18,6 @@ public class Q03_SimpleInterest {
 
         System.out.println("Simple Interest: " + si);
         System.out.println("Total Amount: " + amount);
+        sc.close();
     }
 }

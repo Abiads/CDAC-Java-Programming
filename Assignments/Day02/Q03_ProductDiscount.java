@@ -36,5 +36,6 @@ public class Q03_ProductDiscount {
         System.out.println("Product Name: " + productName);
         System.out.println("Original Price: ₹" + price);
         System.out.println("Final Price after Discount: ₹" + finalPrice);
+        sc.close();
     }
 }

@@ -17,5 +17,6 @@ public class Q08_LargestOfTwo {
         } else {
             System.out.println("Both numbers are equal");
         }
+        sc.close();
     }
 }

@@ -29,5 +29,6 @@ public class Q08_LinearSearch {
         } else {
             System.out.println("Element " + search + " not found in the array");
         }
+        sc.close();
     }
 }

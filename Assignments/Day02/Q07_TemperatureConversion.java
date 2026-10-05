@@ -21,5 +21,6 @@ public class Q07_TemperatureConversion {
         } else {
             System.out.println("Temperature is normal (100°F or below).");
         }
+        sc.close();
     }
 }

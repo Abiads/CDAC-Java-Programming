@@ -17,6 +17,7 @@ class Product {
         price = sc.nextDouble();
         System.out.print("Enter Quantity: ");
         quantity = sc.nextInt();
+        sc.close();
     }
 
     void calculateBill() {

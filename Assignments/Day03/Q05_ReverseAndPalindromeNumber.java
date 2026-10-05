@@ -24,5 +24,6 @@ public class Q05_ReverseAndPalindromeNumber {
         } else {
             System.out.println(n + " is NOT a Palindrome Number.");
         }
+        sc.close();
     }
 }

@@ -21,5 +21,6 @@ public class Q01_ArithmeticOperations {
         System.out.println("Multiplication: " + prod);
         System.out.println("Division: " + div);
         System.out.println("Remainder: " + rem);
+        sc.close();
     }
 }
