@@ -24,12 +24,19 @@ This repository is organized according to the official syllabus (`05_Java Progra
 │   └── TestStudent.java
 ├── Day04/                           # Day 4 assignment document
 │   └── Java Assignment 4-classes and objects.docx
+├── Day05/                           # Day 5 assignment document & classroom code
+│   ├── Java Assignment 5-Inheritance.docx
+│   ├── InheritanceMain.java
+│   ├── InheritanceSimpleMain.java
+│   ├── inheritanceExample2Main.java
+│   └── TestConstrutorBehaviour.java
 │
 ├── Assignments/                     # Solved Student Assignments (Pure Java Files)
 │   ├── Day01/                       # 10 simple Java programs (Operators, Basics)
 │   ├── Day02/                       # 10 simple Java programs (Control Flow, Slabs)
 │   ├── Day03/                       # 10 simple Java programs (Loops & Arrays)
-│   └── Day04/                       # 5 simple Java programs (Classes & Objects)
+│   ├── Day04/                       # 5 simple Java programs (Classes & Objects)
+│   └── Day05/                       # 5 simple Java programs (Inheritance)
 │
 ├── Notes/                           # Detailed Session-by-Session Theory Notes
 
@@ -45,6 +52,7 @@ This repository is organized according to the official syllabus (`05_Java Progra
             │   ├── day02/           # Q01 through Q10 runnable implementations
             │   ├── day03/           # Q01 through Q10 (Loops & Arrays)
             │   ├── day04/           # Q01 through Q05 (Classes & Objects)
+            │   ├── day05/           # Q01 through Q05 (Inheritance)
             │   └── employee_lab/    # Employee & EmployeeManagementDemo
             ├── practice/            # Syllabus Practice Bank Implementations
             │   ├── module01_oop/    # Bank Account Hierarchy & Palindromes
