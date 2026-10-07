@@ -1,8 +1,5 @@
 package com.cdac.assignments.day05;
 
-import java.util.Scanner;
-
-// Superclass
 class BankAccount {
     long accountNo;
     String accountHolderName;
@@ -15,31 +12,26 @@ class BankAccount {
     }
 
     void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-            System.out.println("Deposited: ₹" + amount + " | New Balance: ₹" + balance);
-        } else {
-            System.out.println("Invalid deposit amount!");
-        }
+        balance = balance + amount;
+        System.out.println("Deposited: " + amount + ", Current Balance: " + balance);
     }
 
     void withdraw(double amount) {
-        if (amount > 0 && balance >= amount) {
-            balance -= amount;
-            System.out.println("Withdrawn: ₹" + amount + " | Remaining Balance: ₹" + balance);
+        if (balance >= amount) {
+            balance = balance - amount;
+            System.out.println("Withdrawn: " + amount + ", Current Balance: " + balance);
         } else {
-            System.out.println("Insufficient funds or invalid withdrawal amount!");
+            System.out.println("Insufficient balance");
         }
     }
 
     void displayAccountDetails() {
-        System.out.println("Account Number : " + accountNo);
-        System.out.println("Account Holder : " + accountHolderName);
-        System.out.println("Balance        : ₹" + balance);
+        System.out.println("Account No: " + accountNo);
+        System.out.println("Holder Name: " + accountHolderName);
+        System.out.println("Balance: " + balance);
     }
 }
 
-// Subclass 1 demonstrating Hierarchical Inheritance
 class SavingsAccount extends BankAccount {
     double interestRate;
 
@@ -53,14 +45,12 @@ class SavingsAccount extends BankAccount {
     }
 
     void displaySavingsDetails() {
-        System.out.println("--- Savings Account Details ---");
         displayAccountDetails();
-        System.out.println("Interest Rate  : " + interestRate + "%");
-        System.out.println("Annual Interest: ₹" + calculateInterest());
+        System.out.println("Interest Rate: " + interestRate + "%");
+        System.out.println("Interest Amount: " + calculateInterest());
     }
 }
 
-// Subclass 2 demonstrating Hierarchical Inheritance
 class CurrentAccount extends BankAccount {
     double overdraftLimit;
 
@@ -70,59 +60,25 @@ class CurrentAccount extends BankAccount {
     }
 
     void checkOverdraftLimit() {
-        System.out.println("Available Overdraft Limit: ₹" + overdraftLimit);
+        System.out.println("Overdraft Limit: " + overdraftLimit);
     }
 
     void displayCurrentAccountDetails() {
-        System.out.println("--- Current Account Details ---");
         displayAccountDetails();
-        System.out.println("Overdraft Limit: ₹" + overdraftLimit);
         checkOverdraftLimit();
     }
 }
 
 public class Q03_BankAccountHierarchicalInheritance {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("=== Enter Savings Account Details ===");
-        System.out.print("Account Number: ");
-        long sAccNo = sc.nextLong();
-        sc.nextLine();
-
-        System.out.print("Account Holder Name: ");
-        String sName = sc.nextLine();
-
-        System.out.print("Initial Balance: ");
-        double sBal = sc.nextDouble();
-
-        System.out.print("Interest Rate (%): ");
-        double sRate = sc.nextDouble();
-
-        SavingsAccount sa = new SavingsAccount(sAccNo, sName, sBal, sRate);
-        System.out.println();
+        System.out.println("--- Savings Account ---");
+        SavingsAccount sa = new SavingsAccount(1001, "Amit Kumar", 25000, 4.5);
         sa.displaySavingsDetails();
-        sa.deposit(1000);
+        sa.deposit(5000);
 
-        System.out.println("\n=== Enter Current Account Details ===");
-        System.out.print("Account Number: ");
-        long cAccNo = sc.nextLong();
-        sc.nextLine();
-
-        System.out.print("Account Holder Name: ");
-        String cName = sc.nextLine();
-
-        System.out.print("Initial Balance: ");
-        double cBal = sc.nextDouble();
-
-        System.out.print("Overdraft Limit: ");
-        double cLimit = sc.nextDouble();
-
-        CurrentAccount ca = new CurrentAccount(cAccNo, cName, cBal, cLimit);
-        System.out.println();
+        System.out.println("\n--- Current Account ---");
+        CurrentAccount ca = new CurrentAccount(2001, "Vikram Enterprises", 50000, 20000);
         ca.displayCurrentAccountDetails();
-        ca.withdraw(2000);
-
-        sc.close();
+        ca.withdraw(15000);
     }
 }

@@ -1,8 +1,5 @@
 package com.cdac.assignments.day05;
 
-import java.util.Scanner;
-
-// Superclass
 class Person {
     int personId;
     String personName;
@@ -14,25 +11,21 @@ class Person {
         this.age = age;
     }
 
-    void checkAge() {
-        if (age >= 60) {
-            System.out.println("Age Category   : Senior Citizen (" + age + " years)");
-        } else if (age >= 18) {
-            System.out.println("Age Category   : Adult (" + age + " years)");
-        } else {
-            System.out.println("Age Category   : Minor (" + age + " years)");
-        }
+    void displayPersonDetails() {
+        System.out.println("Person ID: " + personId);
+        System.out.println("Person Name: " + personName);
+        System.out.println("Age: " + age);
     }
 
-    void displayPersonDetails() {
-        System.out.println("Person ID      : " + personId);
-        System.out.println("Person Name    : " + personName);
-        System.out.println("Age            : " + age);
-        checkAge();
+    void checkAge() {
+        if (age >= 18) {
+            System.out.println("Status: Adult");
+        } else {
+            System.out.println("Status: Minor");
+        }
     }
 }
 
-// Subclass 1 - Doctor
 class Doctor extends Person {
     String specialization;
     double consultationFee;
@@ -48,14 +41,13 @@ class Doctor extends Person {
     }
 
     void displayDoctorDetails() {
-        System.out.println("--- Doctor Details ---");
         displayPersonDetails();
-        System.out.println("Specialization : " + specialization);
-        System.out.println("Consultation Fee: ₹" + calculateConsultationAmount());
+        checkAge();
+        System.out.println("Specialization: " + specialization);
+        System.out.println("Consultation Fee: " + calculateConsultationAmount());
     }
 }
 
-// Subclass 2 - Patient
 class Patient extends Person {
     String disease;
     int roomNumber;
@@ -67,70 +59,26 @@ class Patient extends Person {
     }
 
     double calculateRoomCharge() {
-        if (roomNumber >= 200) {
-            return 2500.0;
-        } else {
-            return 1200.0;
-        }
+        return 1500.0;
     }
 
     void displayPatientDetails() {
-        System.out.println("--- Patient Details ---");
         displayPersonDetails();
-        System.out.println("Disease        : " + disease);
-        System.out.println("Room Number    : " + roomNumber);
-        System.out.println("Room Charge/Day: ₹" + calculateRoomCharge());
+        checkAge();
+        System.out.println("Disease: " + disease);
+        System.out.println("Room Number: " + roomNumber);
+        System.out.println("Room Charge: " + calculateRoomCharge());
     }
 }
 
 public class Q05_HospitalManagementInheritance {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("=== Enter Doctor Details ===");
-        System.out.print("Person ID: ");
-        int dId = sc.nextInt();
-        sc.nextLine();
-
-        System.out.print("Doctor Name: ");
-        String dName = sc.nextLine();
-
-        System.out.print("Age: ");
-        int dAge = sc.nextInt();
-        sc.nextLine();
-
-        System.out.print("Specialization: ");
-        String spec = sc.nextLine();
-
-        System.out.print("Consultation Fee: ");
-        double fee = sc.nextDouble();
-
-        Doctor doc = new Doctor(dId, dName, dAge, spec, fee);
-        System.out.println();
+        System.out.println("--- Doctor Details ---");
+        Doctor doc = new Doctor(1, "Dr. Sneha Verma", 38, "Cardiology", 800);
         doc.displayDoctorDetails();
 
-        System.out.println("\n=== Enter Patient Details ===");
-        System.out.print("Person ID: ");
-        int pId = sc.nextInt();
-        sc.nextLine();
-
-        System.out.print("Patient Name: ");
-        String pName = sc.nextLine();
-
-        System.out.print("Age: ");
-        int pAge = sc.nextInt();
-        sc.nextLine();
-
-        System.out.print("Disease: ");
-        String dis = sc.nextLine();
-
-        System.out.print("Room Number: ");
-        int room = sc.nextInt();
-
-        Patient pat = new Patient(pId, pName, pAge, dis, room);
-        System.out.println();
+        System.out.println("\n--- Patient Details ---");
+        Patient pat = new Patient(101, "Manoj Joshi", 45, "Fever", 204);
         pat.displayPatientDetails();
-
-        sc.close();
     }
 }

@@ -1,8 +1,5 @@
 package com.cdac.assignments.day05;
 
-import java.util.Scanner;
-
-// Superclass
 class Product {
     int productId;
     String productName;
@@ -15,21 +12,20 @@ class Product {
     }
 
     double calculateDiscount() {
-        return price * 0.10; // 10% standard discount
+        return price * 0.10;
     }
 
     void displayProductDetails() {
-        System.out.println("Product ID     : " + productId);
-        System.out.println("Product Name   : " + productName);
-        System.out.println("Base Price     : ₹" + price);
-        System.out.println("Discount (10%) : ₹" + calculateDiscount());
+        System.out.println("Product ID: " + productId);
+        System.out.println("Product Name: " + productName);
+        System.out.println("Price: " + price);
+        System.out.println("Discount: " + calculateDiscount());
     }
 }
 
-// Subclass 1 demonstrating Hierarchical Inheritance
 class Electronics extends Product {
     String brand;
-    int warranty; // in months
+    int warranty;
 
     Electronics(int productId, String productName, double price, String brand, int warranty) {
         super(productId, productName, price);
@@ -42,15 +38,13 @@ class Electronics extends Product {
     }
 
     void displayElectronicsDetails() {
-        System.out.println("--- Electronics Product Details ---");
         displayProductDetails();
-        System.out.println("Brand          : " + brand);
-        System.out.println("Warranty       : " + warranty + " months");
-        System.out.println("Final Price    : ₹" + calculateFinalPrice());
+        System.out.println("Brand: " + brand);
+        System.out.println("Warranty: " + warranty + " months");
+        System.out.println("Final Price: " + calculateFinalPrice());
     }
 }
 
-// Subclass 2 demonstrating Hierarchical Inheritance
 class Clothing extends Product {
     String size;
     String material;
@@ -66,62 +60,21 @@ class Clothing extends Product {
     }
 
     void displayClothingDetails() {
-        System.out.println("--- Clothing Product Details ---");
         displayProductDetails();
-        System.out.println("Size           : " + size);
-        System.out.println("Material       : " + material);
-        System.out.println("Final Price    : ₹" + calculateFinalPrice());
+        System.out.println("Size: " + size);
+        System.out.println("Material: " + material);
+        System.out.println("Final Price: " + calculateFinalPrice());
     }
 }
 
 public class Q04_ProductHierarchicalInheritance {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        System.out.println("--- Electronics ---");
+        Electronics e = new Electronics(101, "Smart TV", 40000, "Samsung", 24);
+        e.displayElectronicsDetails();
 
-        System.out.println("=== Enter Electronics Product Details ===");
-        System.out.print("Product ID: ");
-        int eId = sc.nextInt();
-        sc.nextLine();
-
-        System.out.print("Product Name: ");
-        String eName = sc.nextLine();
-
-        System.out.print("Price: ");
-        double ePrice = sc.nextDouble();
-        sc.nextLine();
-
-        System.out.print("Brand: ");
-        String eBrand = sc.nextLine();
-
-        System.out.print("Warranty (in months): ");
-        int eWarranty = sc.nextInt();
-
-        Electronics ele = new Electronics(eId, eName, ePrice, eBrand, eWarranty);
-        System.out.println();
-        ele.displayElectronicsDetails();
-
-        System.out.println("\n=== Enter Clothing Product Details ===");
-        System.out.print("Product ID: ");
-        int cId = sc.nextInt();
-        sc.nextLine();
-
-        System.out.print("Product Name: ");
-        String cName = sc.nextLine();
-
-        System.out.print("Price: ");
-        double cPrice = sc.nextDouble();
-        sc.nextLine();
-
-        System.out.print("Size (e.g., M, L, XL): ");
-        String cSize = sc.nextLine();
-
-        System.out.print("Material (e.g., Cotton): ");
-        String cMaterial = sc.nextLine();
-
-        Clothing clo = new Clothing(cId, cName, cPrice, cSize, cMaterial);
-        System.out.println();
-        clo.displayClothingDetails();
-
-        sc.close();
+        System.out.println("\n--- Clothing ---");
+        Clothing c = new Clothing(201, "Cotton Shirt", 1500, "XL", "Cotton");
+        c.displayClothingDetails();
     }
 }
