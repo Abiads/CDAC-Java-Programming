@@ -54,17 +54,6 @@ This repository is organized according to the official syllabus (`05_Java Progra
             │   ├── day04/           # Q01 through Q05 (Classes & Objects)
             │   ├── day05/           # Q01 through Q05 (Inheritance)
             │   └── employee_lab/    # Employee & EmployeeManagementDemo
-            ├── practice/            # Syllabus Practice Bank Implementations
-            │   ├── module01_oop/    # Bank Account Hierarchy & Palindromes
-            │   ├── module02_exceptions/ # Custom Checked/Unchecked Exceptions
-            │   ├── module03_collections/ # Generic Pair & Word Frequency Map
-            │   ├── module04_streams/    # Student Grade Streams & Fibonacci
-            │   ├── module05_concurrency/ # Producer-Consumer & Thread Sync
-            │   └── module06_reflection/ # Class Inspector Demo
-            ├── session01_basics/    # JVM, Data Types, Control Statements
-            ├── session03_oop/       # OOP, Encapsulation, Polymorphism, Strings
-            ├── session05_exceptions/ # Custom & built-in exception handling
-            └── session06_collections/ # Generics, Enums, Lists, Sets, Maps
 ```
 
 ---
