@@ -30,13 +30,16 @@ This repository is organized according to the official syllabus (`05_Java Progra
 │   ├── InheritanceSimpleMain.java
 │   ├── inheritanceExample2Main.java
 │   └── TestConstrutorBehaviour.java
+├── Day06/                           # Day 6 assignment document
+│   └── Java Assignment 6 -Polymorphism.docx
 │
 ├── Assignments/                     # Solved Student Assignments (Pure Java Files)
 │   ├── Day01/                       # 10 simple Java programs (Operators, Basics)
 │   ├── Day02/                       # 10 simple Java programs (Control Flow, Slabs)
 │   ├── Day03/                       # 10 simple Java programs (Loops & Arrays)
 │   ├── Day04/                       # 5 simple Java programs (Classes & Objects)
-│   └── Day05/                       # 5 simple Java programs (Inheritance)
+│   ├── Day05/                       # 5 simple Java programs (Inheritance)
+│   └── Day06/                       # 5 simple Java programs (Polymorphism)
 │
 ├── Notes/                           # Detailed Session-by-Session Theory Notes
 
@@ -53,6 +56,7 @@ This repository is organized according to the official syllabus (`05_Java Progra
             │   ├── day03/           # Q01 through Q10 (Loops & Arrays)
             │   ├── day04/           # Q01 through Q05 (Classes & Objects)
             │   ├── day05/           # Q01 through Q05 (Inheritance)
+            │   ├── day06/           # Q01 through Q05 (Polymorphism)
             │   └── employee_lab/    # Employee & EmployeeManagementDemo
 ```
 
