@@ -10,27 +10,28 @@ This repository is organized according to the official syllabus (`05_Java Progra
 
 ```
 ├── 05_Java Programming.pdf          # Official CDAC PGCP-AI Java Syllabus
-├── Day01/                           # Original Day 1 documents (.docx)
-│   ├── Java Assignment 1.docx
-│   └── Java Notes DAY1.docx
-├── Day02/                           # Day 2 documents, notes & classroom code
-│   ├── Java Assignment 2.docx
+├── Day01_NOTES/                     # Day 1 Notes & Assignment (.docx)
+│   ├── Java Notes DAY1.docx
+│   └── Java Assignment 1.docx
+├── Day02/Day02_NOTES/               # Day 2 Notes (.docx, .pdf) & Assignment (.docx)
 │   ├── Java Notes DAY2.docx
 │   ├── Java Notes Day2.pdf
-│   └── Day2Examples.zip
-├── Day03/                           # Day 3 notes and student classroom code
-│   ├── Day3-Notes-Array.docx
-│   ├── Student.java
-│   └── TestStudent.java
-├── Day04/                           # Day 4 assignment document
+│   └── Java Assignment 2.docx
+├── Day03/Day03_NOTES/               # Day 3 Notes (Arrays & Operations) (.docx & .md)
+│   ├── Java Notes DAY3.docx
+│   ├── Java Notes DAY3.md
+│   └── Java Assignment 3.docx
+├── Day04/Day04_NOTES/               # Day 4 Notes (Classes & Objects) (.docx & .md)
+│   ├── Java Notes DAY4.docx
+│   ├── Java Notes DAY4.md
 │   └── Java Assignment 4-classes and objects.docx
-├── Day05/                           # Day 5 assignment document & classroom code
-│   ├── Java Assignment 5-Inheritance.docx
-│   ├── InheritanceMain.java
-│   ├── InheritanceSimpleMain.java
-│   ├── inheritanceExample2Main.java
-│   └── TestConstrutorBehaviour.java
-├── Day06/                           # Day 6 assignment document
+├── Day05/Day05_NOTES/               # Day 5 Notes (Inheritance & super) (.docx & .md)
+│   ├── Java Notes DAY5.docx
+│   ├── Java Notes DAY5.md
+│   └── Java Assignment 5-Inheritance.docx
+├── Day06/Day06_NOTES/               # Day 6 Notes (Polymorphism) (.docx & .md)
+│   ├── Java Notes DAY6.docx
+│   ├── Java Notes DAY6.md
 │   └── Java Assignment 6 -Polymorphism.docx
 │
 ├── Assignments/                     # Solved Student Assignments (Pure Java Files)
@@ -41,7 +42,7 @@ This repository is organized according to the official syllabus (`05_Java Progra
 │   ├── Day05/                       # 5 simple Java programs (Inheritance)
 │   └── Day06/                       # 5 simple Java programs (Polymorphism)
 │
-├── Notes/                           # Detailed Session-by-Session Theory Notes
+├── Notes/                           # Detailed Session-by-Session Theory Notes (Markdown)
 
 └── CDAC_Java_Project/               # Pre-Configured Eclipse Java Project
     ├── .project                     # Eclipse project definition
