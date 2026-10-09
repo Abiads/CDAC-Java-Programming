@@ -33,14 +33,19 @@ This repository is organized according to the official syllabus (`05_Java Progra
 │   ├── Java Notes DAY6.docx
 │   ├── Java Notes DAY6.md
 │   └── Java Assignment 6 -Polymorphism.docx
+├── Day07/Day07_NOTES/               # Day 7 Notes (Abstraction, Interface, Exceptions, Collections)
+│   ├── Java Notes DAY7.docx
+│   ├── Java Notes DAY7.md
+│   └── Java Assignment 7.docx
 │
 ├── Assignments/                     # Solved Student Assignments (Pure Java Files)
 │   ├── Day01/                       # 10 simple Java programs (Operators, Basics)
 │   ├── Day02/                       # 10 simple Java programs (Control Flow, Slabs)
-│   ├── Day03/                       # 10 simple Java programs (Loops & Arrays)
+│   ├── Day03/                       # 8 simple Java programs (Arrays & CLI Args)
 │   ├── Day04/                       # 5 simple Java programs (Classes & Objects)
 │   ├── Day05/                       # 5 simple Java programs (Inheritance)
-│   └── Day06/                       # 5 simple Java programs (Polymorphism)
+│   ├── Day06/                       # 5 simple Java programs (Polymorphism)
+│   └── Day07/                       # 4 simple Java programs (Abstraction, Interface, Exception, Collection)
 │
 ├── Notes/                           # Detailed Session-by-Session Theory Notes (Markdown)
 
@@ -54,10 +59,11 @@ This repository is organized according to the official syllabus (`05_Java Progra
             ├── assignments/
             │   ├── day01/           # Q01 through Q10 runnable implementations
             │   ├── day02/           # Q01 through Q10 runnable implementations
-            │   ├── day03/           # Q01 through Q10 (Loops & Arrays)
+            │   ├── day03/           # Q01 through Q08 (Arrays & CLI Args)
             │   ├── day04/           # Q01 through Q05 (Classes & Objects)
             │   ├── day05/           # Q01 through Q05 (Inheritance)
             │   ├── day06/           # Q01 through Q05 (Polymorphism)
+            │   ├── day07/           # Q01 through Q04 (Abstraction, Interface, Exception, Collection)
             │   └── employee_lab/    # Employee & EmployeeManagementDemo
 ```
 
