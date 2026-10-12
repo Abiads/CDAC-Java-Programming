@@ -82,6 +82,50 @@ If Eclipse has red exclamation marks:
 
 ---
 
+### 1.3 GitHub Copilot: Fix "Model Config" / "Failed to get model config" Error
+
+If GitHub Copilot or Copilot Chat gives a **"Model config"**, **"No model configuration found"**, or **"Error fetching model metadata"** error, use these quick fixes:
+
+#### Fix 1: Sign Out & Re-Authenticate (Fixes 80% of Cases)
+Stale auth tokens prevent Copilot from downloading the latest model list:
+1. Click the **Accounts** icon (bottom-left gear or profile icon in VS Code).
+2. Select your GitHub account &rarr; Click **Sign Out**.
+3. In the Command Palette (`Ctrl + Shift + P`), type: `Developer: Reload Window` (or restart the IDE).
+4. Click the Copilot icon or prompt &rarr; Sign in to GitHub again.
+
+#### Fix 2: Reset the Chat Model Selection
+If Copilot Chat is set to a model your account/organization has disabled (e.g., Claude 3.5 Sonnet / o1):
+1. In the Copilot Chat window, check the model dropdown (next to the input box).
+2. Switch back to **Default** or **GPT-4o**.
+3. If on an organization/enterprise plan, verify model access is turned ON under:
+   * **GitHub.com &rarr; Settings &rarr; Copilot &rarr; Model Access**.
+
+#### Fix 3: Update Copilot Extensions
+GitHub frequently updates backend model configuration schemas:
+1. Open the **Extensions** tab (`Ctrl + Shift + X`).
+2. Search `@installed copilot`.
+3. Update both **GitHub Copilot** and **GitHub Copilot Chat** to the latest versions.
+   *(Tip: If the current release has a known bug, click **Switch to Pre-Release Version**).*
+
+#### Fix 4: Clear Corrupted Copilot Local Storage Cache
+If cached configuration JSON is corrupted:
+1. Close VS Code completely.
+2. Press `Win + R`, paste:
+   ```cmd
+   %APPDATA%\Code\User\globalStorage
+   ```
+   and press **Enter**.
+3. Delete any folder named `github.copilot` or `github.copilot-chat`.
+4. Reopen VS Code and sign in.
+
+#### Fix 5: Campus / CDAC Proxy & SSL Interception
+If on campus/lab Wi-Fi that intercepts SSL certificates:
+1. Open VS Code Settings (`Ctrl + ,`).
+2. Search `proxy strict ssl`.
+3. Uncheck **Http: Proxy Strict SSL** (or test temporarily on mobile hotspot).
+
+---
+
 ## 2. Eclipse Test-Speed Tricks: Write Your Entire Code in 5 Minutes
 
  evaluators look for clean, compiling code. Use Eclipse's built-in code generators to write 80% of your code with 2 clicks:
